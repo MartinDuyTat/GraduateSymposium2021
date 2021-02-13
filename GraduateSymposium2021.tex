@@ -64,28 +64,162 @@
 \section{Introduction}
 \begin{frame}{Introduction}
   \begin{itemize}
-    \item{Introduce DELHPI and RICH, the authors, paper link}
+    \item{Physical interpretation of the anomalous Cherenkov rings observed with the DELPHI detector}
+    \begin{itemize}
+      \item{\href{https://arxiv.org/abs/2001.08576v1}{arXiv:2001.08576}}
+      \item{January 2020}
+      \item{V. F. Perepelitsa (ITEP Moscow)}
+      \item{T. Ekelof (Uppsala University)}
+      \item{A. Ferrer (Valencia University)}
+      \item{B. R. French}
+      \item{Retired HEP scientists?}
+      \item{Independent of DELPHI Collaboration}
+    \end{itemize}
+    \item{Interpret large Cherenkov rings as tachyons}
+    \item{Measure mass parameter}
+  \end{itemize}
+\end{frame}
+
+\section{DELPHI and RICH}
+\begin{frame}{DELPHI and RICH}
+  \begin{itemize}
+    \item{DELPHI: Detector with Lepton, Photon and Hadron Identification}
+    \begin{itemize}
+      \item{One of four main detectors at LEP}
+      \item{Operator from $1989$ to $2000$}
+      \item{Vertex detector (VD), EM calorimeter (HPC), hadronic calorimeter (HCAL)}
+      \item{Used RICH for PID}
+    \end{itemize}
+    \item{DELPHI Barrel RICH:}
+    \begin{itemize}
+      \item{Cherenkov angle: $\cos(\theta) = \frac{1}{n\beta}$}
+      \item{$C_6F_{14}$ liquid radiator ($n = 1.273 \implies \theta_\text{max} = \SI{667}{\milli\radian}$)}
+      \item{$C_5F_{12}$ gaseous radiator($n = 1.00194 \implies \theta_\text{max} = \SI{62}{\milli\radian}$)}
+      \item{UV photons converted into photoelectrons $\implies$ Signal!}
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\section{DELPHI and RICH}
+\begin{frame}{DELPHI and RICH}
+  \begin{figure}
+    \centering
+    \includegraphics[width = 0.75\textwidth]{Cherenkov.png}
+    \caption{Principles of the DELPHI RICH detector}
+  \end{figure}
+  \begin{itemize}
+    \item{DELPHI strategy: Fit rings with five mass hypothesis ($e$, $\mu$, $\pi$, $K$, $p$) to obtain Cherenkov angle}
+    \item{This paper: Fit each photon direction individually}
   \end{itemize}
 \end{frame}
 
 \section{Tachyon particles}
 \begin{frame}{Tachyon particles}
   \begin{itemize}
-    \item{Introduce theory of tachyons}
-  \end{itemize}
-\end{frame}
-
-\section{DELPHI RICH}
-\begin{frame}{DELPHI RICH}
-  \begin{itemize}
-    \item{Demonstrate how RICH at DELPHI worked and how rings can be anomalous}
+    \item{Particles moving at $v > c$}
+    \item{$E^2 - p^2 = -\mu^2$}
+    \item{$\mu$: Mass parameter}
+    \item{$\mu = p\sqrt{1 - n^2\cos^2(\theta)}$}
   \end{itemize}
 \end{frame}
 
 \section{Event topologies and candidate selection}
 \begin{frame}{Event topologies and candidate selection}
+  \begin{figure}
+    \centering
+    \includegraphics[width = 0.5\textwidth]{Topologies.png}
+    \caption{Tachyon event topologies considered}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Event topologies and candidate selection}
   \begin{itemize}
-    \item{Go through each topology, explain their signatures and show plots of these signatures}
+    \item{Topology $1$: $e^+e^-\to\gamma t^+t^-$}
+    \begin{itemize}
+      \item{High energy photon back-to-back with tachyons}
+      \item{Tachyons may look like a single track, use $\dd{E}/\dd{x}$ to distinguish}
+      \item{Signature:}
+      \begin{itemize}
+        \item{One neutral and one charged jet}
+        \item{Hits in the first layer of VD}
+        \item{Charged jet should shower in HPC}
+      \end{itemize}
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Event topologies and candidate selection}
+  \begin{figure}
+    \centering
+    \includegraphics[width = 0.6\textwidth]{Topology1.png}
+    \caption{$e^+e^-\to \gamma t^+t^-$ event}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Event topologies and candidate selection}
+  \begin{itemize}
+    \item{Topology $2a$: $e^+e^-\to t^+t^-$}
+    \item{Topology $2b$: $e^+e^-\to e^+e^-t^+t^-$}
+    \begin{itemize}
+      \item{Two back-to-back jets with opposite charge and one single track per jet}
+      \item{Signature:}
+      \begin{itemize}
+        \item{Both tracks should have showers in HPC}
+        \item{Tracks in opposite directions in $x$-$y$ plane}
+      \end{itemize}
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Event topologies and candidate selection}
+  \begin{figure}
+    \centering
+    \includegraphics[width = 0.6\textwidth]{Topology2.png}
+    \caption{$e^+e^-\to t^+t^-$ event}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Event topologies and candidate selection}
+  \begin{itemize}
+    \item{Topology $3$: $eX\to eX't^+t^-$}
+    \begin{itemize}
+      \item{Two jets, one with a single track, one with $3$ charged tracks}
+      \item{Signature:}
+      \begin{itemize}
+        \item{All tracks should shower in the HPC}
+        \item{Tracks with non-zero impact parameters in the three-particle jet}
+        \item{Tracks in opposite directions in $x$-$y$ plane}
+      \end{itemize}
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Event topologies and candidate selection}
+  \begin{figure}
+    \centering
+    \includegraphics[width = 0.6\textwidth]{Topology3.png}
+    \caption{$eX\to eX't^+t^-$ event}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Event topologies and candidate selection}
+  \begin{itemize}
+    \item{Other general selection criteria:}
+    \begin{itemize}
+      \item{Non-hadronic events}
+      \item{No muons}
+      \item{Good quality tracks inside geometric acceptance}
+      \item{Kinematic cuts to reduce background}
+    \end{itemize}
+    \item{$395$ candidates satisfied all these criteria}
+    \item{$53$ candidates had at least one anomalous Cherenkov ring with background below $10\%$}
+    \item{$29$ candidates had two gaseous anomalous rings per track}
+    \item{Require background probability less than $10^{-3}$:}
+    \begin{itemize}
+      \item{$9$ events in topology $1$}
+      \item{$6$ events in topology $2$}
+      \item{$12$ events in topology $3$}
+    \end{itemize}
   \end{itemize}
 \end{frame}
 
@@ -93,28 +227,77 @@
 \subsection{Correlation between RICH detectors}
 \begin{frame}{Correlation between RICH detectors}
   \begin{itemize}
-    \item{Show results of the correlation between the two RICH}
+    \item{From Cherenkov angle formula:}
+    \begin{itemize}
+      \item{$n_1\cos(\theta_1) = \frac{1}{\beta} = n_2\cos(\theta_2)$}
+      \item{Can plot this as a line in the $\theta_1$ vs $\theta_2$ plane}
+    \end{itemize}
+    \item{Or plot the predicted speeds $\beta_1$ and $\beta_2$}
   \end{itemize}
+\end{frame}
+
+\begin{frame}{Correlation between RICH detectors}
+  \begin{figure}
+    \centering
+    \begin{subfigure}{0.5\textwidth}
+      \includegraphics[width = 1\textwidth]{AngleCorrelation.png}
+      \caption{Gas to liquid angle correlation}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+      \includegraphics[width = 1\textwidth]{SpeedCorrelation.png}
+      \caption{Gas to liquid speed correlation}
+    \end{subfigure}
+  \end{figure}
 \end{frame}
 
 \subsection{Tachyon mass parameters}
-\begin{frame}{$K_S^0$ veto}
+\begin{frame}{Tachyon mass parameters}
   \begin{itemize}
-    \item{Show the calculated mass parameters}
+    \item{Calculate the mass parameters $\mu$ from Cherenkov angles}
+    \item{Found excess events at $\mu = \SI{0.28}{\giga\eV}$ and $\mu = \SI{5}{\giga\eV}$}
   \end{itemize}
 \end{frame}
 
+\begin{frame}{Tachyon mass parameters}
+  \begin{figure}
+    \centering
+    \includegraphics[width = 0.6\textwidth]{MassParameters.png}
+    \caption{Tachyon mass parameters $\mu$}
+  \end{figure}
+\end{frame}
+
 \subsection{Kinematic fit}
-\begin{frame}{$K_S^0$ veto}
+\begin{frame}{Kinematic fit}
   \begin{itemize}
-    \item{Explain the kinematic fitting and show the results}
+    \item{Do an over-constrained kinematic fit}
+    \item{$\mu$ is unknown}
+    \item{Constraints:}
+    \begin{itemize}
+      \item{Energy-momentum conservation}
+      \item{$\mu = p\sqrt{1 - n^2\cos^2(\theta)}$}
+    \end{itemize}
   \end{itemize}
+\end{frame}
+
+\begin{frame}{Kinematic fit}
+  \begin{figure}
+    \centering
+    \includegraphics[width = 0.6\textwidth]{ConstrainedMassParameters.png}
+    \caption{Tachyon mass parameters $\mu$ after kinematic fit}
+  \end{figure}
 \end{frame}
 
 \section{Conclusion}
 \begin{frame}{Conclusion}
   \begin{itemize}
-    \item{Conclude and mention the prospects of tachyon physics at ALICE}
+    \item{Anomalous Cherenkov rings at DELPHI have been interpreted as tachyon signals}
+    \item{Strong correlations between the gaseous and liquid RICH radiators were found}
+    \item{Tachyon mass parameters show an excess at $\SI{0.29(1)}{\giga\eV}$ and $\SI{4.6(2)}{\giga\eV}$}
+    \item{Further experiments are needed to confirm or refute these findings}
+    \begin{itemize}
+      \item{$\gamma\gamma$ interactions (topology $2b$) at ALICE could study this with their RICH, with a $Z^2$ enhancement in cross section}
+      \item{LHCb, with high RICH Cherenkov angle resolution, could use low multiplicity events}
+    \end{itemize}
   \end{itemize}
 \end{frame}
 
