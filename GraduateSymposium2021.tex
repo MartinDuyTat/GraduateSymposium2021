@@ -67,11 +67,6 @@
     \item{Physical interpretation of the anomalous Cherenkov rings observed with the DELPHI detector}
     \begin{itemize}
       \item{\href{https://arxiv.org/abs/2001.08576v1}{arXiv:2001.08576}}
-      \item{January 2020}
-      \item{V. F. Perepelitsa (ITEP Moscow)}
-      \item{T. Ekelof (Uppsala University)}
-      \item{A. Ferrer (Valencia University)}
-      \item{B. R. French}
       \item{Retired HEP scientists?}
       \item{Independent of DELPHI Collaboration}
     \end{itemize}
@@ -86,8 +81,7 @@
     \item{DELPHI: Detector with Lepton, Photon and Hadron Identification}
     \begin{itemize}
       \item{One of four main detectors at LEP}
-      \item{Operator from $1989$ to $2000$}
-      \item{Vertex detector (VD), EM calorimeter (HPC), hadronic calorimeter (HCAL)}
+      \item{Operated from $1989$ to $2000$}
       \item{Used RICH for PID}
     \end{itemize}
     \item{DELPHI Barrel RICH:}
@@ -95,16 +89,14 @@
       \item{Cherenkov angle: $\cos(\theta) = \frac{1}{n\beta}$}
       \item{$C_6F_{14}$ liquid radiator ($n = 1.273 \implies \theta_\text{max} = \SI{667}{\milli\radian}$)}
       \item{$C_5F_{12}$ gaseous radiator($n = 1.00194 \implies \theta_\text{max} = \SI{62}{\milli\radian}$)}
-      \item{UV photons converted into photoelectrons $\implies$ Signal!}
     \end{itemize}
   \end{itemize}
 \end{frame}
 
-\section{DELPHI and RICH}
 \begin{frame}{DELPHI and RICH}
   \begin{figure}
     \centering
-    \includegraphics[width = 0.75\textwidth]{Cherenkov.png}
+    \includegraphics[width = 0.50\textwidth]{Cherenkov.png}
     \caption{Principles of the DELPHI RICH detector}
   \end{figure}
   \begin{itemize}
@@ -125,27 +117,22 @@
 
 \section{Event topologies and candidate selection}
 \begin{frame}{Event topologies and candidate selection}
-  \begin{figure}
-    \centering
-    \includegraphics[width = 0.5\textwidth]{Topologies.png}
-    \caption{Tachyon event topologies considered}
-  \end{figure}
-\end{frame}
-
-\begin{frame}{Event topologies and candidate selection}
   \begin{itemize}
     \item{Topology $1$: $e^+e^-\to\gamma t^+t^-$}
     \begin{itemize}
       \item{High energy photon back-to-back with tachyons}
-      \item{Tachyons may look like a single track, use $\dd{E}/\dd{x}$ to distinguish}
       \item{Signature:}
       \begin{itemize}
         \item{One neutral and one charged jet}
-        \item{Hits in the first layer of VD}
-        \item{Charged jet should shower in HPC}
+        \item{Use $\dd{E}/\dd{x}$ to distinguish from single tracks}
+        \item{Charged jet should shower in EM calorimeter}
       \end{itemize}
     \end{itemize}
   \end{itemize}
+  \begin{figure}
+    \centering
+    \includegraphics[width = 0.2\textwidth]{TopologyA.png}
+  \end{figure}
 \end{frame}
 
 \begin{frame}{Event topologies and candidate selection}
@@ -161,14 +148,25 @@
     \item{Topology $2a$: $e^+e^-\to t^+t^-$}
     \item{Topology $2b$: $e^+e^-\to e^+e^-t^+t^-$}
     \begin{itemize}
-      \item{Two back-to-back jets with opposite charge and one single track per jet}
+      \item{Tachyon pair production}
       \item{Signature:}
       \begin{itemize}
-        \item{Both tracks should have showers in HPC}
-        \item{Tracks in opposite directions in $x$-$y$ plane}
+        \item{Both tracks should have showers in EM calorimeter}
+        \item{Tracks in opposite directions and opposite charge}
       \end{itemize}
     \end{itemize}
   \end{itemize}
+  \begin{figure}
+    \centering
+    \begin{subfigure}{0.5\textwidth}
+      \centering
+      \includegraphics[width = 0.2\textwidth]{TopologyB.png}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+      \centering
+      \includegraphics[width = 0.2\textwidth]{TopologyC.png}
+    \end{subfigure}
+  \end{figure}
 \end{frame}
 
 \begin{frame}{Event topologies and candidate selection}
@@ -183,15 +181,19 @@
   \begin{itemize}
     \item{Topology $3$: $eX\to eX't^+t^-$}
     \begin{itemize}
-      \item{Two jets, one with a single track, one with $3$ charged tracks}
+      \item{$e^\pm$ interaction with matter to produce tachyons}
       \item{Signature:}
       \begin{itemize}
-        \item{All tracks should shower in the HPC}
-        \item{Tracks with non-zero impact parameters in the three-particle jet}
-        \item{Tracks in opposite directions in $x$-$y$ plane}
+        \item{Two jets, one with a single track, one with $3$ charged tracks}
+        \item{All tracks should shower in EM calorimeter}
+        \item{Some tracks with non-zero impact parameters in the three-particle jet}
       \end{itemize}
     \end{itemize}
   \end{itemize}
+  \begin{figure}
+    \centering
+    \includegraphics[width = 0.2\textwidth]{TopologyD.png}
+  \end{figure}%
 \end{frame}
 
 \begin{frame}{Event topologies and candidate selection}
@@ -214,7 +216,7 @@
     \item{$395$ candidates satisfied all these criteria}
     \item{$53$ candidates had at least one anomalous Cherenkov ring with background below $10\%$}
     \item{$29$ candidates had two gaseous anomalous rings per track}
-    \item{Require background probability less than $10^{-3}$:}
+    \item{Require background event probability less than $10^{-3}$:}
     \begin{itemize}
       \item{$9$ events in topology $1$}
       \item{$6$ events in topology $2$}
