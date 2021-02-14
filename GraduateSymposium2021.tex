@@ -160,11 +160,11 @@
     \centering
     \begin{subfigure}{0.5\textwidth}
       \centering
-      \includegraphics[width = 0.2\textwidth]{TopologyB.png}
+      \includegraphics[width = 0.4\textwidth]{TopologyB.png}
     \end{subfigure}%
     \begin{subfigure}{0.5\textwidth}
       \centering
-      \includegraphics[width = 0.2\textwidth]{TopologyC.png}
+      \includegraphics[width = 0.4\textwidth]{TopologyC.png}
     \end{subfigure}
   \end{figure}
 \end{frame}
@@ -192,7 +192,7 @@
   \end{itemize}
   \begin{figure}
     \centering
-    \includegraphics[width = 0.2\textwidth]{TopologyD.png}
+    \includegraphics[width = 0.3\textwidth]{TopologyD.png}
   \end{figure}%
 \end{frame}
 
@@ -206,21 +206,11 @@
 
 \begin{frame}{Event topologies and candidate selection}
   \begin{itemize}
-    \item{Other general selection criteria:}
+    \item{Other general selection criteria: No hadrons, no muons, good track quality, etc...}
+    \item{Result after selection:}
     \begin{itemize}
-      \item{Non-hadronic events}
-      \item{No muons}
-      \item{Good quality tracks inside geometric acceptance}
-      \item{Kinematic cuts to reduce background}
-    \end{itemize}
-    \item{$395$ candidates satisfied all these criteria}
-    \item{$53$ candidates had at least one anomalous Cherenkov ring with background below $10\%$}
-    \item{$29$ candidates had two gaseous anomalous rings per track}
-    \item{Require background event probability less than $10^{-3}$:}
-    \begin{itemize}
-      \item{$9$ events in topology $1$}
-      \item{$6$ events in topology $2$}
-      \item{$12$ events in topology $3$}
+      \item{$53$ event with at least one anomalous Cherenkov ring}
+      \item{$29$ candidates had two anomalous rings per track}
     \end{itemize}
   \end{itemize}
 \end{frame}
@@ -256,8 +246,12 @@
 \begin{frame}{Tachyon mass parameters}
   \begin{itemize}
     \item{Calculate the mass parameters $\mu$ from Cherenkov angles}
+    \item{Find correlation between Cherenkov radiators}
     \item{Found excess events at $\mu = \SI{0.28}{\giga\eV}$ and $\mu = \SI{5}{\giga\eV}$}
   \end{itemize}
+  \begin{equation*}
+    \mu = p\sqrt{1 - n^2\cos^2(\theta)}
+  \end{equation*}
 \end{frame}
 
 \begin{frame}{Tachyon mass parameters}
